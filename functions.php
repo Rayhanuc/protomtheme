@@ -30,4 +30,14 @@ add_action('header_part', 'dekhi_ki_hoi',9);
 function dekhi_ki_hoi(){
 	echo 'kisu ekta';
 }
+
+
+add_filter( 'test', 'change_korbo' );
+function change_korbo(){
+	return 'something';
+}
+
+
+
+
 ?>
